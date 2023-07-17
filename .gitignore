@@ -1,0 +1,9 @@
+node_modules/
+clients/
+.wwebjs_auth/
+.wwebjs_cache/
+now.js
+products.js
+possibleintent.txt
+*.jpg
+checkproductintent.js
