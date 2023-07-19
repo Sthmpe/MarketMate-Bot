@@ -136,7 +136,7 @@ class Customer {
 		// Send the menu options to the customer
 		await client.sendMessage(
 			message.from,
-			'Please reply with an option\n\nA. Start 🛒\nB. How to Shop 🏫\nC. Order History 🧾\nD. Our Sellers 🛍️\nE. Your Account Details 👤\nF. Give us feedback on our service. 📝\nG. About Us. 🌍\nH. Support team\nI.🤖 Test our ongoing AI customer support system (Experimental) 🧪\n\nReply with cancel to end any process.\nNote any invalid response will be ignored you can countinue by replying with the right option or response'
+			'Please reply with an option\n\nA. Start 🛒\nB. How to Shop 🏫\nC. Order History 🧾\nD. Our Sellers 🛍️\nE. Your Account Details 👤\nF. Give us feedback on our service. 📝\nG. About Us. 🌍\nH.H.🤝 Support Team\nI.🤖 Test our ongoing AI customer support system (Experimental) 🧪\n\nReply with cancel to end any process.\nNote: Any invalid response will be ignored. You can continue by replying with the correct option or response. We are here to help you in the best way possible!'
 		);
 		this.option = true;
 	}
@@ -428,13 +428,13 @@ class Customer {
 	 */
 	handleSupport(client, message) {
 		if (message.body.trim().toUpperCase() === 'CANCEL') {
-			this.bill = false;
+			this.support = false;
 			this.sendMenu(client, message);
 			return;
 		}
 
 		if (!this.sent) {
-			client.sendMessage(message.from, 'Drop your messege our support team will get in touch with you shortly.');
+			client.sendMessage(message.from, 'Drop your message, and our support team will get in touch with you shortly. Alternatively, you can contact our support team at 09152540533 or visit https://wa.me/qr/E3PCV7OSXPOOP1.', { linkPreview: true });
 			client.sendMessage(message.from, 'Reply with cancel to go back to main menu');
 			this.sent = true;
 		}
