@@ -43,7 +43,6 @@ function start(client) {
 				customer.get(message.from).account = await database.getCustomers(message.from);
 			}
 			const chat = await message.getChat();
-			await chat.sendStateTyping();
 			if (customer.get(message.from).option) {
 				const selectedOption = message.body.trim().toUpperCase();
 				if (
@@ -96,6 +95,7 @@ function start(client) {
 						if (message.body.trim().toUpperCase() === 'A') {
 							break;
 						} else {
+							await chat.sendStateTyping();
 							client.sendMessage(message.from, '❗❗❗ Please reply with a valid response.');
 						}
 					} else {
@@ -124,6 +124,7 @@ function start(client) {
 						await chat.sendStateTyping();
 					}
 					if (message.body.trim().toUpperCase() !== 'CANCEL' && customer.get(message.from).sent) {
+						await chat.sendStateTyping();
 						client.sendMessage(message.from, '❗❗❗ Please reply with a valid response');
 						break;
 					}
@@ -140,6 +141,7 @@ function start(client) {
 						await chat.sendStateTyping();
 					}
 					if (message.body.trim().toUpperCase() !== 'CANCEL' && customer.get(message.from).sent) {
+						await chat.sendStateTyping();
 						client.sendMessage(message.from, '❗❗❗ Please reply with a valid response');
 						break;
 					}
@@ -150,6 +152,7 @@ function start(client) {
 						await chat.sendStateTyping();
 					}
 					if (message.body.trim().toUpperCase() !== 'CANCEL' && customer.get(message.from).sent) {
+						await chat.sendStateTyping();
 						client.sendMessage(message.from, '❗❗❗ Please reply with a valid response');
 						break;
 					}
@@ -164,6 +167,7 @@ function start(client) {
 							message.body.trim().toUpperCase() !== 'CANCEL' &&
 							message.body.trim().toUpperCase() !== 'UPDATE'
 						) {
+							await chat.sendStateTyping();
 							client.sendMessage(message.from, '❗❗❗ Please reply with a valid response');
 							break;
 						}
@@ -181,6 +185,7 @@ function start(client) {
 						await chat.sendStateTyping();
 					}
 					if (message.body.trim().toUpperCase() !== 'CANCEL' && customer.get(message.from).sent) {
+						await chat.sendStateTyping();
 						client.sendMessage(message.from, '❗❗❗ Please reply with a valid response');
 						break;
 					}
@@ -191,6 +196,7 @@ function start(client) {
 						await chat.sendStateTyping();
 					}
 					if (message.body.trim().toUpperCase() !== 'CANCEL' && customer.get(message.from).sent) {
+						await chat.sendStateTyping();
 						client.sendMessage(message.from, '❗❗❗ Please reply with a valid response');
 						break;
 					}
