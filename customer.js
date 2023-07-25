@@ -114,7 +114,7 @@ class Customer {
 	 */
 	async sendWelcomeMessages(client, message) {
 		// Send a welcome message to the customer
-		if (!this.account.name) {
+		if (this.account.name !==  null) {
 			await client.sendMessage(message.from, `Hello 👋👋👋 ${this.account.name}, Welcome to our shopping bot!, Thank you for choosing MarketMate(Ipata & Tanke Market)`);
 		} else if (message._data.notifyName) {
 			await client.sendMessage(message.from, `Hello 👋👋👋 ${message._data.notifyName}, Welcome to our shopping bot!, Thank you for choosing MarketMate(Ipata & Tanke Market)`);
