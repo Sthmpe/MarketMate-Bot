@@ -7,7 +7,6 @@ MarketMate-Whatsapp 🛒 is a chatbot 🤖 designed to improve customer experien
 - [Features](#Features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
 - [Dependencies](#dependencies)
 - [Contributing](#contributing)
 - [License](#license)
@@ -27,12 +26,13 @@ MarketMate-Whatsapp 🛒 is a chatbot 🤖 designed to improve customer experien
 ```
 2. Navigate to the project directory: 
 ```bash
-	cd MARKETMATE-WHATSAPP
+	cd MARKETMATE-Bot
 ```
 3. Install the required dependencies:
 ```bash
 	npm install
 ```
+It is assumed that node and npm are install on the system.
 
 ## Usage
 
@@ -42,13 +42,7 @@ MarketMate-Whatsapp 🛒 is a chatbot 🤖 designed to improve customer experien
 ```
 2. Follow the on-screen prompts.
 
-## Configuration
-
-The project requires some configuration before use. Follow these steps to set up the necessary configurations:
-
-1. Open the `config.js` file.
-2. Set up your WhatsApp account credentials in config.json.
-3. Customize the bot's behavior and responses in config.json.
+It is advisable to use a whatsapp account you are not using for personal or formal use to test, as the bot will respond to any incoming messages.
 
 ## Dependencies
 

@@ -13,7 +13,7 @@ database.connect();
 
 /**
  * start: start client start reciving the client messages and handle response.
- * @param {object} client - The client object for the WhatsApp API.
+ * @param {object} client - The client object for the WhatsApp.
  */
 function start(client) {
 	// Listen for incoming messages
@@ -26,6 +26,7 @@ function start(client) {
 			// Save chat log for the new customer
 			chatLog.saveChatLog(customer.get(message.from).msgfrom, message._data.notifyName, path.join(__dirname, 'clients'));
 		}
+
 		if (message.from === '2349152540533@c.us' && message.body.toUpperCase() === 'DATA') {
 			dir = path.join(__dirname, 'clients');
 			await generatePDFData(client, message, dir, 'Registered_Accounts.txt', path.join(dir, 'customers', 'Registered_Accounts.pdf'));
@@ -38,6 +39,7 @@ function start(client) {
 			await generateTXTData(client, message, path.join(dir, 'customers', 'Terminate.txt'));
 			await generateTXTData(client, message, path.join(dir, 'logs', 'chatLogs.txt'));
 		}
+		
 		if (customer.get(message.from).msgfrom === message.from && message.from !== 'status@broadcast') {
 			if (!customer.get(message.from).account) {
 				customer.get(message.from).account = await database.getCustomers(message.from);

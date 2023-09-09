@@ -5,7 +5,7 @@ const path = require('path');
 
 /**
  * create: Creates a client and sets up event listeners for loading screen, QR code, authentication, and readiness.
- * @param {object} client - The client object for the WhatsApp API.
+ * @param {object} client - The client object for the WhatsApp.
  * @return {Promise} A promise that resolves when the client is initialized.
  */
 function create(client) {

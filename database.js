@@ -1,16 +1,19 @@
-// database.js
+require('dotenv').config();
 const { MongoClient } = require('mongodb');
 
-const uri = 'mongodb+srv://olaniteolanight:Oluwasegun%231@marketmate.erud7dv.mongodb.net/?retryWrites=true&w=majority';
-const client = new MongoClient(uri);
+const uri = process.env.uri;
+const DbClient = new MongoClient(uri);
 let db = null;
 
+/**
+ * connect: To connect to mongoDb.
+ */
 async function connect() {
 	try {
 		if (db) return db; // If a connection is already established, return it
 	    
-		await client.connect();
-		db = client.db('MarketMate');
+		await DbClient.connect();
+		db = DbClient.db('MarketMate');
 		console.log('Connected to MongoDB');
 		return db;
 	} catch (error) {
@@ -19,10 +22,15 @@ async function connect() {
 	}
 }
 
+/**
+ * insertCustomer: To insert the customer data to the database.
+ * @param {object} account - The object that contans the customer details.
+ * @param {variable} ID - The customer whatsapp number.
+ */
 async function insertCustomer(account, ID) {
   	try {
 		account.id = ID;
-    		const db = client.db('MarketMate');
+    		const db = Dbclient.db('MarketMate');
     		const collection = db.collection('customers_data');
 		const existingCustomer = await collection.findOne({ id: ID});
 		if (existingCustomer && account) {
@@ -37,9 +45,13 @@ async function insertCustomer(account, ID) {
   	}
 }
 
+/**
+ * getCustomer: To get the customer data from the database using their ID(whatsapp number).
+ * @param {variable} ID - The customer whatsapp number.
+ */
 async function getCustomers(ID) {
   	try {
-    		const db = client.db('MarketMate');
+    		const db = Dbclient.db('MarketMate');
     		const collection = db.collection('customers_data');
     		const customerData = await collection.findOne({id: ID});
     		console.log('Customer data:', customerData);

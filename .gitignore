@@ -2,8 +2,5 @@ node_modules/
 clients/
 .wwebjs_auth/
 .wwebjs_cache/
-now.js
-products.js
-possibleintent.txt
+.env
 *.jpg
-checkproductintent.js

@@ -2,7 +2,7 @@ const fs = require('fs');
 const moment = require('moment');
 const path = require('path');
 
-// chatlog object to keep all record of the chat per day.
+// chatlog object to keep all record of the chat(The customers(that is the other whatsapp accuonts) the bot chat with) per day.
 const chatLog = {
 		currentDate: null, // A variable that holds the date.
 		currentSerial: null, // A variable that holds the serial number.

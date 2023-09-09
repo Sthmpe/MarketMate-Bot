@@ -1,0 +1,103 @@
+THIS ARE THE POSSIBLE QUESTION A CUSTOMER MAY ASK THE BOT BUT I WANT TO TAILOR IT TO NIGERIA BASE POSSIBLE QUESTONS
+
+Check product availability
+Place a new order
+Track order status
+Request a refund
+Inquire about delivery options
+Ask for product recommendations
+View order history
+Provide feedback or reviews
+Ask for store location
+Check store opening hours
+Request contact details of a seller
+Inquire about payment methods
+Report a problem with a product
+Ask for product specifications
+Check current promotions or offers
+Seek assistance with using the bot
+Inquire about delivery fees
+Ask for the return policy
+Check account balance
+Request a product exchange
+Ask for nutritional information
+Inquire about loyalty programs
+Ask for assistance with applying a coupon code
+Ask for assistance with applying a coupon code
+Check the status of a refund
+Request help with a forgotten password
+Inquire about bulk ordering
+Ask for gift wrapping options
+Check the expiry date of a product
+Request a discount code
+Inquire about product warranties
+Ask for assistance with navigation
+Check available payment options
+Request a product demonstration
+Inquire about subscription services
+Ask for product bundle options
+Check the latest product arrivals
+Request assistance with setting up an account
+Inquire about product ingredients
+Ask for help with checking out
+Check the shipping policy
+Request a product sample
+Inquire about product certification
+Ask for assistance with cancelling an order
+Check the status of a back-ordered item
+Request information about a specific brand
+Inquire about product sizing options
+Ask for help with applying for a refund
+Check the availability of a specific brand
+Inquire about product ratings and reviews
+Ask for help with adding items to the cart
+Check the status of a delayed delivery
+Request information about a seller's reputation
+Inquire about product assembly instructions
+Ask for help with changing delivery address
+Check the availability of a discontinued product
+Request assistance with choosing a gift
+Inquire about product allergy information
+Ask for help with changing order details
+Check the status of a warranty claim
+Request information about a product recall
+Inquire about product customization options
+Ask for help with redeeming loyalty points
+Check the availability of a seasonal product
+Request assistance with a damaged item
+Inquire about product durability
+Ask for help with updating account details
+Check the status of a delayed refund
+Request information about a seller's return policy
+Inquire about product compatibility
+Ask for help with contacting customer support
+Check the availability of a limited edition product
+Request assistance with a lost package
+Inquire about product safety certifications
+Ask for help with managing a subscription
+Check the status of a product repair
+Request information about a seller's contact information
+Inquire about product storage instructions
+Ask for help with checking gift card balance
+Check the availability of a pre-order product
+Request assistance with a billing issue
+Inquire about product maintenance tips
+Ask for help with canceling a subscription
+Check the status of a product exchange
+Request information about a seller's delivery area
+Inquire about product recycling options
+Ask for help with tracking a return
+Check the availability of a discontinued brand
+Request assistance with a missing item from an order
+Inquire about product warranty registration
+Ask for help with redeeming a promotional code
+Check the status of a repair request
+Request information about a seller's customer service hours
+Inquire about product reordering options
+Ask for help with managing account notifications
+Check the availability of a limited-time offer
+Request assistance with a duplicate order
+Inquire about product material sourcing
+Ask for help with changing subscription preferences
+Check the status of a delayed refund process
+These intents cover a wide range of customer 
